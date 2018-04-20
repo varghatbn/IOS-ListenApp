@@ -1,0 +1,40 @@
+<resources>
+
+
+    <string name="action_settings">Settings</string>
+
+    <!-- General -->
+    <string name="app_name">ListenApp</string>
+
+    <!-- Toolbar titles -->
+    <string name="toolbar_title_home">Home</string>
+    <string name="toolbar_title_bluetooth">Bluetooth</string>
+    <string name="toolbar_title_library">Music Library</string>
+    <string name="toolbar_title_account">Account</string>
+    <string name="toolbar_title_mic">Record Podcast</string>
+    <string name="toolbar_title_help_and_feedback">Help&amp;Feedback</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_drawer_item_home">Home</string>
+    <string name="nav_drawer_item_bluetooth">Bluetooth</string>
+    <string name="nav_drawer_music_library">Music Library</string>
+    <string name="nav_drawer_record">Record Podcast</string>
+    <string name="nav_drawer_play">Player</string>
+    <string name="nav_drawer_logout">Logout</string>
+    <string name="navigation_drawer_opened">The navigation drawer is opened</string>
+    <string name="navigation_drawer_closed">The navigation drawer is closed</string>
+    <string name="tools_text_account_information_username">Abdul</string>
+    <string name="tools_text_account_information_email">Abdul@Comp3004.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="duration">duration</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="preference_file_key">listenApp</string>
+
+
+</resources>

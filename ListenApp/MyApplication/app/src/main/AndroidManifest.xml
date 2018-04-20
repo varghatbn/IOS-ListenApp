@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abdulkadir.seenav">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.WithNavDrawer" />
+        <activity
+            android:name=".activities.AccountActivity"
+            android:label="@string/toolbar_title_account"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".musicPlayer.MainPage"
+            android:label="@string/toolbar_title_library"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme">
+            >
+        </activity>
+        <activity
+            android:name=".bluetooth.myMain"
+            android:label="@string/toolbar_title_bluetooth"
+            android:parentActivityName=".activities.MainActivity">
+            >
+        </activity>
+        >
+        <activity
+            android:name=".activities.RecordActivity"
+            android:label="@string/toolbar_title_mic"
+            android:parentActivityName=".activities.MainActivity">
+            >
+        </activity>
+
+        <service
+            android:name=".musicPlayer.musicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".musicPlayer.PlayerListContent"
+            android:authorities="com.example.PlayListContentProvider"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".musicPlayer.MusicAppwidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/music_appwidget_info" />
+        </receiver>
+
+        <activity android:name=".login.LoginActivity">
+
+        </activity>
+        <activity android:name=".login.RegisterActivity" />
+        <activity android:name=".musicPlayer.DeviceListActivity" />
+        <activity android:name=".musicPlayer.micDList" />
+        <activity android:name=".activities.FeedActivity" >
+
+        </activity>
+
+        <activity android:name=".activities.RetrieveActivity">
+
+        </activity>
+        <activity android:name=".activities.PlayerActivity">
+
+        </activity>
+
+        <activity android:name=".activities.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

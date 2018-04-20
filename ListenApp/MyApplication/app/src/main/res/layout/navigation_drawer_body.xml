@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_8"
+    android:paddingTop="@dimen/spacing_8"
+    tools:context="com.example.abdulkadir.seenav.activities.MainActivity"
+    tools:showIn="@layout/navigation_drawer">
+
+    <FrameLayout
+        android:id="@+id/navigation_drawer_items_list_linearLayout_home"
+        style="@style/NavDrawerRowLayout"
+        tools:background="@color/nav_drawer_row_selected">
+
+        <ImageView
+            android:id="@+id/navigation_drawer_items_list_icon_home"
+            style="@style/NavDrawerRowItemIcon"
+            app:srcCompat="@drawable/ic_home_white_24px"
+            tools:ignore="ContentDescription"
+            tools:tint="@color/nav_drawer_item_icon_selected" />
+
+        <TextView
+            android:id="@+id/navigation_drawer_items_textView_home"
+            style="@style/NavDrawerRowText"
+            android:text="@string/nav_drawer_item_home"
+            tools:textColor="@color/nav_drawer_item_text_selected" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navigation_drawer_items_list_linearLayout_bluetooth"
+        style="@style/NavDrawerRowLayout">
+
+        <ImageView
+            android:id="@+id/navigation_drawer_items_list_icon_bluetooth"
+            style="@style/NavDrawerRowItemIcon"
+            app:srcCompat="@drawable/ic_bluetooth_white_24px"
+            tools:ignore="ContentDescription"
+            tools:tint="@color/nav_drawer_icon" />
+
+        <TextView
+            android:id="@+id/navigation_drawer_items_textView_bluetooth"
+            style="@style/NavDrawerRowText"
+            android:text="@string/nav_drawer_item_bluetooth" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navigation_drawer_items_list_linearLayout_library"
+        style="@style/NavDrawerRowLayout">
+
+        <ImageView
+            android:id="@+id/navigation_drawer_items_list_icon_library"
+            style="@style/NavDrawerRowItemIcon"
+            android:tint="@color/icon_active_black"
+            app:srcCompat="@drawable/ic_library_music_white_24px"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/navigation_drawer_items_textView_library"
+            style="@style/NavDrawerRowText"
+            android:text="@string/nav_drawer_music_library" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navigation_drawer_items_list_linearLayout_record"
+        style="@style/NavDrawerRowLayout">
+
+        <ImageView
+            android:id="@+id/navigation_drawer_items_list_icon_record"
+            style="@style/NavDrawerRowItemIcon"
+            android:tint="@color/icon_active_black"
+            app:srcCompat="@drawable/ic_mic_white_24px"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/navigation_drawer_items_textView_record"
+            style="@style/NavDrawerRowText"
+            android:text="@string/nav_drawer_record" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/navigation_drawer_items_list_linearLayout_play"
+        style="@style/NavDrawerRowLayout">
+
+        <ImageView
+            android:id="@+id/navigation_drawer_items_list_icon_play"
+            style="@style/NavDrawerRowItemIcon"
+            android:tint="@color/icon_active_black"
+            app:srcCompat="@drawable/ic_play_white_24px"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/navigation_drawer_items_textView_play"
+            style="@style/NavDrawerRowText"
+            android:text="@string/nav_drawer_play" />
+
+    </FrameLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/navigation_drawer_items_list_linearLayout_logout"
+        style="@style/NavDrawerRowLayout">
+
+        <ImageView
+            android:id="@+id/navigation_drawer_items_list_icon_logout"
+            style="@style/NavDrawerRowItemIcon"
+            android:tint="@color/icon_active_black"
+            app:srcCompat="@drawable/ic_exit_to_app_white_24px"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/navigation_drawer_items_textView_logout"
+            style="@style/NavDrawerRowText"
+            android:text="@string/nav_drawer_logout" />
+
+    </FrameLayout>
+
+</LinearLayout>
